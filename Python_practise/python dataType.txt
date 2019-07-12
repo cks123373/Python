@@ -1,0 +1,50 @@
+Numeric datatype
+sequence
+sets
+mapping
+
+--------------------------------------------------------------------
+
+Numeric Data Type :
+ Int ( python 3 it's unlimited length , 2.x its like C ) 
+ long ( only exist in 2.x with unlimited length)
+ float  ( floating point number , same like double ) 
+ complex  ( complex number) 
+
+---------------------------------------------------------------------
+sequnce Data type : 
+
+- String represent sequnce of char 
+Str class : any thing put in double quote  - 2.x (256 char::  asci code char set )
+          : unicode char - 3.x ( 65536 char support ) .asci code is subset of unicode .
+
+-Bytes
+a sequence of integer in range of 0-255  ( immutable ) only in 3.x
+
+-Bytearray
+like Bytes but mutable
+
+
+-list 
+collection of objects (mmutable ) 
+
+-tuple
+collection of objects(immutable)
+
+
+----------------------------------------------------
+
+Set -
+
+
+set 
+unordered collection of objects avlb since 2.6
+
+
+frozenset
+like set but mutuable 
+
+
+------------------------------------------------------
+Mapping : 
+dict : also called hashmaps 

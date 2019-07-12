@@ -1,0 +1,5 @@
+python -m python_compile DataType.py
+
+to create DataType.pyc file ( it's a byte code) 
+
+PVM directly read this if it's created . other wise PVM directly read source file 

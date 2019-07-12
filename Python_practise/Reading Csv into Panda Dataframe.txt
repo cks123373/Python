@@ -1,0 +1,42 @@
+import numpy as np
+import pandas as pd
+from pandas import *
+
+dframe = pd.read_csv('/Users/chand/Desktop/hadoop/assignment_spark/employes.csv')
+
+
+dframe=pd.read_table('/Users/chand/Desktop/hadoop/assignment_spark/employes.csv' , header = None , nrows=2 )
+
+dframe.to_csv('/Users/chand/Desktop/FileSave1.csv')
+
+
+
+
+import sys
+
+dframe.to_csv(sys.stdout)
+
+dframe.to_csv(sys.stdout ,sep='|')
+
+dframe.to_csv(sys.stdout ,columns=[empno,job,sal])
+
+
+Reading json into Panda dataframe -  
+import json
+
+df1=pd.read_json('/Users/chand/Desktop/text_files/json_files/rdd_json_data_file.json',lines=True)
+
+
+xlsfile = pd.ExcelFile('   ' ) 
+dframe = xlsfile.parse('sheet1')
+
+import os 
+print(os.getcwd())
+
+
+
+# Spark to Pandas
+df_pd = df.toPandas()
+
+# Pandas to Spark
+df_sp = spark_session.createDataFrame(df_pd)

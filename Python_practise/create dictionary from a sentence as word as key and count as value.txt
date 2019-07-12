@@ -1,0 +1,22 @@
+
+
+
+
+
+
+------------------------------------------------------
+str='This is chandan singh This is chandan singh'
+
+return a dictionary with all the word and count . 
+
+d=dict()
+
+for i in str.split(" "): 
+    if i in d.keys():
+        d[i]=d[i]+1
+    else:
+        d[i]=1
+
+-------------------------------------------------------
+
+update a dictionary key from a to b 

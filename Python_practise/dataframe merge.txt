@@ -1,0 +1,15 @@
+dframe1=DataFrame(
+
+
+df1=spark.read.format('csv').option("header" ,"true").load('Melbourne_housing_FULL.csv')
+df1.show(5)
+
+df1.groupBy('Suburb').sum(expr( " col('Landsize').cast(IntegerType) ")).show()
+
+df1.schema
+
+df1=
+
+df1=df1.withColumn("Landsize", col("Landsize).cast("Int"))
+
+df1.select(max('Landsize')).show()
